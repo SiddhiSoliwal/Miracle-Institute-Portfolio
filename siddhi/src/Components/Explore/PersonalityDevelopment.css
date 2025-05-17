@@ -1,0 +1,464 @@
+body {
+  margin: 0;
+ padding: 0;
+}
+
+.app {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #ff7500, #001f61, #6a00ff);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+    
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-family: poppins, sans-serif;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.start-btn {
+  padding: 12px 28px;
+    font-size: 1rem;
+    background-color: font-family;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ff7500;
+}
+
+.explore-btn {
+  padding: 12px 28px;
+    font-size: 1rem;
+    background-color: white;
+    color: #001F61;
+    border: 2px solid #001F61;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Why Personality Development Matters */
+.why-section {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.why-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.why-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.why-text h2 {
+  color: #001f61;
+  margin-bottom: 20px;
+
+ 
+}
+
+.why-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1rem;
+
+}
+
+.why-text a {
+  color: #ff7500;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.why-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.why-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.development-section {
+  width: 100%;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f0ebeb;
+}
+
+.development-section h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #001f61;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 20px;
+  
+}
+
+.card {
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: left;
+  transition: transform 0.3s ease;
+ 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  background-color: #faeee0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #c5705d;
+  font-family: 'Playfair Display', serif;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.card ul {
+  padding-left: 18px;
+  list-style: none;
+}
+
+.card ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #c5705d;
+}
+
+
+.progress-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.progress-left,
+.progress-right {
+  flex: 1;
+  min-width: 300px;
+  margin-left: 20px;
+}
+
+h2 {
+  color: #001f61;
+  margin-bottom: 10px;
+ 
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.skill {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.skill span {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.bar {
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background-color: #ff7500;
+}
+
+.percent {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.9rem;
+  color: #001F61;
+}
+
+.report-btn {
+  padding: 12px 28px;
+    font-size: 1rem;
+    background-color: white;
+    color: #001F61;
+    border: 2px solid #001F61;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checklist-box {
+  background-color: #f5f2f7;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 50px;
+  width: 70%;
+  margin-left: 40px;
+}
+
+.checklist-box h3 {
+  margin-bottom: 20px;
+  color: #001f61;
+  font-size: 1.8rem;
+}
+
+.checklist-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.checklist-box li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.checklist-box input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.weekly-progress {
+  margin-top: 15px;
+}
+
+.weekly-progress span {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.weekly-progress .completed {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #888;
+}
+.roadmap-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #f0ebeb;
+}
+
+.roadmap-container h2 {
+  text-align: center;
+  color: #001f61;
+  margin-bottom: 10px;
+}
+
+.roadmap-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ff7500;
+  border-radius: 50%;
+  margin-top: 12px;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 18px;
+  left: 5px;
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+  z-index: 0;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  width: 100%;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #001f61;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  color: #444;
+  margin: 10px 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.tag.active {
+  background-color: #ffe0c2;
+  color: #b45309;
+}
+
+.tag.upcoming {
+  background-color: #e6f0ff;
+  color: #004db3;
+}
+.faq-container {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 0 20px;
+  
+}
+
+.faq-container h2 {
+  font-size: 40px;
+  color: #001F61;
+  font-weight: 600;
+}
+
+.faq-subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+.faq-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  text-align: left;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+}
+
+.faq-box h3 {
+  font-size: 18px;
+  color: #001F61;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.faq-box p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}

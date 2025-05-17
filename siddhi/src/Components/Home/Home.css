@@ -1,0 +1,622 @@
+/* Container holding the entire page */
+.page-container {
+    position: relative;
+  }
+  
+  /* Hero (gray background) section */
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0ebeb; 
+    padding: 60px 100px;
+    flex-wrap: wrap;
+  }
+  
+  /* Hero section text styling */
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn-primary {
+    padding: 12px 28px;
+    font-size: 1rem;
+    background-color: font-family;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #001F61;
+  }
+  
+  .btn-secondary {
+    padding: 12px 28px;
+    font-size: 1rem;
+    background-color: white;
+    color: #001F61;
+    border: 2px solid #001F61;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Hero image styling */
+  .hero-image {
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* White background section */
+  .white-section {
+    background: #fff;
+    padding: 60px 100px;
+    text-align: center;
+  }
+  
+  /* Lottie Arrow styling.
+     This positions the arrow absolutely so that it appears along the left edge
+     between the gray (hero) and white sections. Adjust the top value as needed. */
+  .lottie-arrow {
+    position: absolute;
+    left: 0;
+    top: calc(60px + 300px); /* starting at the top of hero plus height of hero-image; adjust as needed */
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .white-section {
+      padding: 40px 20px;
+    }
+  }
+  .lottie-arrow {
+    position: absolute;
+    left: 0;
+    top: 420px; /* Adjust based on your hero section height */
+    z-index: 10;
+  }
+    .white-section {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.career-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.career-subheading {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.career-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.career-card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  text-align: left;
+}
+
+.career-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.career-card h3 {
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.career-card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.career-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #555;
+}
+
+.career-button {
+  background-color: #f0e5ff;
+  color: #4b0082;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.heading {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .heading p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+
+  .cards-containerr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .cardd {
+    width: 370px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+
+  .cardd:hover {
+    transform: translateY(-5px);
+  }
+
+  .cardd img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .cardd-content {
+    padding: 20px;
+  }
+
+  .cardd-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .cardd-info {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #241818;
+  }
+
+  .cardd-meta {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #131212;
+  }
+
+  .cardd-meta span {
+    color: #df904b;
+    padding: 5px 8px;
+    border-radius: 6px;
+  }
+
+  .btnn {
+    display: block;
+    margin: 40px auto 0;
+    padding: 12px 24px; 
+    background-color: white;
+    color: #001F61;
+   border: 2px solid #001F61;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    height: 20px;
+    width: 150px;
+  font-weight: bold;
+  }
+
+  .btn:hover {
+    background-color: white;
+  }.card-image {
+    height: 180px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+  
+ 
+  
+  h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #1c1c1c;
+    font-family: 'Playfair Display', serif;
+    margin-left: 60px;
+  }
+
+  .subtitlee {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-top: 5px;
+  }
+
+  .slider-containerr {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .slider {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+  }
+
+  .slider::-webkit-scrollbar {
+    display: none; /* optional: hide scrollbar */
+  }
+
+  .card {
+    flex: 0 0 200px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    text-align: center;
+    padding: 16px;
+    
+  }
+
+  .card img {
+    height: 130px;
+    margin-bottom: 12px;
+  }
+
+  .card-title {
+    font-weight: bold;
+    color: #1c1c1c;
+  }
+
+  .card-sub {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav-button.right {
+    right: -16px;
+  }
+
+  .nav-button.left {
+    left: -16px;
+  }
+    .slider-container :hover{
+        transform: translateY(-5px);
+    }
+    .sid-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 20px;
+        margin-left: 20px;
+      }
+      
+      .sid-card {
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        overflow: hidden;
+        width: 280px;
+        background: #fff;
+        box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .sid-video {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        background-color: #000;
+      }
+      
+      .sid-content {
+        padding: 12px 16px;
+      }
+      
+      .sid-org {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 4px;
+      }
+      
+      .sid-title {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+      
+      .sid-type {
+        font-size: 0.85rem;
+        color: #555;
+      }
+      
+      .sid-buttons {
+        display: flex;
+        gap: 12px;
+        padding: 16px;
+        margin-top: 10px;
+      }
+      
+      .sid-btn {
+        padding: 8px 16px;
+        border: 1px solid #001F61;
+        background: #fff;
+        color:#001F61;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 500;
+      }
+      
+      .sid-btn.primary {
+        background: #001F61;
+        color: #fff;
+      }
+      .testimonial-sectionn {
+        padding: 50px;
+        background-color:  #f0ebeb;
+        position: relative;
+      }
+      
+      .testimonial-section h2 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #333;
+        font-family: 'Playfair Display', serif;
+    
+      }
+      
+      .testimonial-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+     
+      }
+      
+      .testimonial-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        font-size: 15px;
+        
+      }
+      
+      .testimonial-card .quote {
+        font-style: italic;
+        margin-bottom: 15px;
+        color: #333;
+        font-size: 16px;
+      }
+      
+      .testimonial-card .person {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .testimonial-card .avatar {
+        width: 40px;
+        height: 40px;
+        background-color: #ddd;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      
+      .testimonial-card .info {
+        font-size: 14px;
+        color: #555;
+      }
+      
+      .testimonial-card .source {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      .testimonial-card .stats {
+        color: #888;
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+      
+      .testimonial-link {
+        color: #1c57c6;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      
+      .down-arrow {
+      
+            position: absolute;
+            left: 0;
+            top: calc(60px + 300px); /* starting at the top of hero plus height of hero-image; adjust as needed */
+            transform: translateY(-50%);
+            z-index: 10;
+            margin-top: 110px;
+          
+      }
+      .pricing-section {
+        padding: 50px 20px;
+        background-color: #fff;
+        text-align: center;
+      }
+      
+      .pricing-section h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+        color: #222;
+        font-family:'Playfair Display', serif;
+      }
+      
+      .pricing-section .subtitle {
+        color: #555;
+        margin-bottom: 30px;
+        font-size: 16px;
+      }
+      
+      .pricing-cards {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .card {
+        border: 1px solid #e2e2e2;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .card-header {
+        background-color: #f6f4fe;
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      .card-header h3 {
+        color: #222;
+        margin: 0 0 5px;
+        font-weight: bolder;
+      }
+      
+      .plan-subtitle {
+        color: #666;
+        margin: 0 0 5px;
+      }
+      
+      .plan-audience {
+        font-size: 14px;
+        color: #444;
+      }
+      
+      .card-body {
+        padding: 20px;
+      }
+      
+      .price {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      
+      .note {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 15px;
+      }
+      
+      .btn {
+        background-color: #001F61;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+        height: 40px;
+      }
+      
+      .btn:hover {
+        background-color: #001F61;
+      }
+      
+      .features {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+      }
+      
+      .features li {
+        margin: 8px 0;
+        color: #333;
+        font-size: 14px;
+      }
+      

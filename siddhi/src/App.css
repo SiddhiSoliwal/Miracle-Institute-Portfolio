@@ -1,0 +1,15 @@
+/* App.css */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+main {
+  padding-top: 80px; /* Offset for fixed navbar height */
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
